@@ -8,7 +8,7 @@ Hybrids es una librería de interfaz de usuario para crear componentes web con u
 La librería hybrids proporcina una forma simple y declarativa para crear elementos personalizados. 
 
 ### Competidores
-Para entender en que posicion se encuentra, debemos saber quienes son sus competidores mas cercados o mas populares.
+Para entender en que posición se encuentra, debemos saber quienes son sus competidores mas cercados o mas populares.
 
 | React | Stencil | Polymer | Slim | Skatejs |
 |     :---:      |      :---:      |     :---:      |     :---:      |     :---:      |
@@ -58,7 +58,7 @@ Entrando en detalle con el componente HelloWorld, importamos `define` y `html` d
 ```js
 import { define, html } from 'hybrids';
 ```
-- html: Es lo que envuelve o hace referencia a nuestras etiquetas propias de html, es decir, si tenemos un título y un parrafo en nuestro archivo html de esta forma:
+- html: Es lo que envuelve o hace referencia a nuestras etiquetas propias de html, es decir, si tenemos un título y un párrafo en nuestro archivo html de esta forma:
 ``` html
 <h1>Título</h1>
 <p>Párrafo</p>
@@ -70,17 +70,25 @@ html`<h1>Título<h1>
 ```
 - define: como se mencionó anteriormente, `define` nos ayuda a definir los elementos personalizados o customElements que queremos crear o utilizar. Tiene algún parecido con el vue-custom-element del framework vue.js.
 
-El objeto que vemos acontinuación, es el que contiene la estructura del componente web con sus propiedades y también define la interfaz con la que interactura el usuario.
+El objeto que vemos a continuación, es el que contiene la estructura del componente web con sus propiedades y también determina la interfaz con la que interactúa el usuario.
 ```js
 const HelloWorld = {
   name: 'Mundo',
   render: ({ name }) => html`Hola ${name}!`;
 };
 ```
-- Una de las funciones principales que debería tener tu componente es la propiedad `render` que es una función que te permite crear o renderizar tu elemento para visualizarlo.
-- Lo que vemos como name, es la propiedad o el estado del componente.
+- render: Una de las funciones principales que debería tener tu componente es la propiedad `render` que es una función que te permite crear o renderizar tu elemento para visualizarlo.
+- name: Es la propiedad o el estado del componente, este nombre lo puedes definir como desees, no necesariamente se debe llamar `name`
 
+NOTA: Las propiedades o estados utilizan la función de transformación (transform) para garantizar el tipo estricto del valor establecido por propiedad o atributo. Es decir, cuando agregas un valor por defecto, como el caso de `name: 'Mundo'`, estas definiendo que el valor es una cadena o string, por ende, el transform congela el tipo de valor para evitar la mutación de sus propiedades. Además, defaultValue se comparte entre instancias de elementos personalizados, por lo que ninguno de ellos debería cambiarlo. Para omitir la transformación, defaultValue debe establecerse en undefined.
 
+*Transform Types*
+- string -> String(value)
+- number -> Number(value)
+- boolean -> Boolean(value)
+- function -> defaultValue(value)
+- object -> Object.freeze(value)
+- undefined -> value
 
 ### Uso
 Puedes configurar webpack, rollup para empaquetar tu proyecto e instalando el paquete de hybrids.
@@ -100,4 +108,4 @@ Si se dirige a los navegadores modernos y no desea utilizar herramientas externa
 
 ### Enlaces externos
 - [Documentación oficial](https://hybrids.js.org/)
-- [Hablando un poco sobre la librería](https://www.youtube.com/watch?v=8M9PLG4SFrU)
+- [Hablando sobre hybrids - Coderos](https://www.youtube.com/watch?v=8M9PLG4SFrU)
