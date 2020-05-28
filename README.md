@@ -9,7 +9,7 @@ Hybrids es una librería de interfaz de usuario para crear componentes web con u
 
   
 
-### Competidores
+## Competidores
 
 Para entender en qué posición se encuentra esta librería, debemos saber quienes son sus competidores más cercados o mas populares.
 
@@ -17,7 +17,7 @@ Para entender en qué posición se encuentra esta librería, debemos saber quien
 | :---: | :---: | :---: | :---: | :---: |
 | <img  alt="React"  src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"  width="80" /> | <img  alt="Stencil"  src="https://s3.amazonaws.com/media-p.slid.es/uploads/249891/images/6369783/Screen_Shot_2019-07-18_at_6.59.32_AM.png"  width="80" /> | <img  alt="Polymer"  src="https://upload.wikimedia.org/wikipedia/commons/6/69/Polymer_Project_logo.png"  width="80" /> | <img  alt="Slim"  src="https://avatars2.githubusercontent.com/u/39967650?s=200&v=4"  width="80" /> | <img  alt="Skatejs"  src="https://avatars0.githubusercontent.com/u/7636121?s=280&v=4"  width="80" /> |
 
-### Concepto
+## Concepto
 
 Actualmente, de forma nativa, La única forma de crear un elemento personalizado es usar una clase, que extiende de HTMLElement y definirlo con Custom Elements API: [CustomElements.define()](https://developer.mozilla.org/es/docs/Web/API/CustomElementRegistry/define)
 
@@ -97,7 +97,7 @@ const HelloWorld = {
 - object -> Object.freeze(value)
 - undefined -> value
 
-### Uso
+## Uso
 Puedes configurar webpack, rollup para empaquetar tu proyecto e instalando el paquete de hybrids.
 ```
 npm i hybrids
@@ -110,6 +110,32 @@ import {  html, define  } from 'https://unpkg.com/hybrids@[PUT_VERSION_HERE:x.x.
 ...
 </script>
 ```
-### Enlaces externos
+## Ventajas y Desventajas
+**Ventajas**
+- Definición simple: objetos simples y funciones puras, nada de clase o el contexto del `this`
+- Recálculo rápido: caché inteligente integrada y mecanismos de detección de cambios que permite activar la función de actualización `render` solo cuando cambia una de las propiedades del componente.
+- Se puede integrar de forma fácil con otras librerías como Redux y React.
+
+**Desventajas**
+- Poca documentación: la pagina oficial tiene la documentación básica para entender la librería pero no profundiza.
+- Baja comunidad: La comunidad es muy poca, casi nula, la que utiliza esta librería, por ende, no existe tanta documentación, artículos, ejemplos, para apoyarte sobre ciertos conceptos que quieras aclarar y la documentación no lo brinda.
+
+
+## Conclusión
+Me parece que es una librería que tiene mucho potencial, su curva de aprendizaje no es baja pero tampoco tan compleja, pero sí dificulta buscar información. Para una persona que apenas esta iniciando en el desarrollo de componentes web, la documentación es simple comparada con React, Vue y Svelte, y como no tiene una comunidad grande se dificulta su aprendizaje. Cabe aclarar que, prácticamente, el único que la mantiene es el mismo creador hasta el momento.
+
+Es posible utilizar Hybrids en un proyecto de producción, pero en lo personal, no lo utilizaría por el momento, para proyectos que impliquen varios desarrolladores. De pronto para un proyecto pequeño personal, sí la tendría presente pero en un proyecto empresarial no. 
+
+¿Por qué estas aprendiendo sobre la librería si no la piensas utilizar?, como desarrollador web, pienso que es bueno conocer que existen otras librerías y framework que te ayudan a solucionar o construir proyectos web, en algunos casos, dependiendo del proyecto tu decides que utilizar y entre mas conocimiento en general tengas, puedes decidir cual te conviene más.
+
+Por obtener conocimientos generales de varias herramientas no te va a disminuir el rendimiento por la cual te has especializado, puede que en un futuro te encuentres con un proyecto echo en esta librería y al menos cuentas con las bases de su mecanismo para utilizarla.
+
+
+
+## Enlaces externos
+comparto el enlace oficial de la librería hybrids por si quieres consultar y tener mayor información. También comparto un enlace donde coderos propuso un reto utilizando esta librería en la que participe con otras personas explicando el código de la solución y dando nuestros puntos de vista. 
+
+Doy gracias a Coderos, especialmente a Chistopher Díaz por presentar el reto, hacer que indagará un poco sobre ella y así poder aprender de forma muy general su base y utilización para crear componentes web con ella.
+
 -  [Documentación oficial](https://hybrids.js.org/)
 -  [Hablando sobre hybrids - Coderos](https://www.youtube.com/watch?v=8M9PLG4SFrU)
