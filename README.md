@@ -135,7 +135,7 @@ Por obtener conocimientos generales de varias herramientas no te va a disminuir 
 ## Enlaces externos
 comparto el enlace oficial de la librería hybrids por si quieres consultar y tener mayor información. También comparto un enlace donde coderos propuso un reto utilizando esta librería en la que participe con otras personas explicando el código de la solución y dando nuestros puntos de vista. 
 
-Doy gracias a Coderos, especialmente a Chistopher Díaz por presentar el reto, hacer que indagará un poco sobre ella y así poder aprender de forma muy general su base y utilización para crear componentes web con ella.
+Doy gracias a Coderos, especialmente a Christopher Díaz por presentar el reto, hacer que indagará un poco sobre ella y así poder aprender de forma muy general su base y utilización para crear componentes web con ella.
 
 -  [Documentación oficial](https://hybrids.js.org/)
 -  [Hablando sobre hybrids - Coderos](https://www.youtube.com/watch?v=8M9PLG4SFrU)
