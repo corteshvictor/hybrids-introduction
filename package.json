@@ -1,4 +1,5 @@
 {
+  "homepage": "https://corteshvictor.github.io/hybrids-introduction/",
   "name": "hybrids.js",
   "version": "0.1.0",
   "description": "Hybrids is a UI library for creating web components with strong declarative and functional approach based on plain objects and pure functions.",
@@ -6,7 +7,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "dev": "webpack serve --mode development --env development"
+    "dev": "webpack serve --mode development --env development",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "hybrids",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "css-loader": "5.2.1",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "5.3.1",
     "style-loader": "2.0.0",
     "url-loader": "4.1.1",
