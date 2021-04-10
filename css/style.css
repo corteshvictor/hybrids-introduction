@@ -28,3 +28,34 @@ header {
   height: 350px;
   width: 400px;
 }
+
+.twitter-follow {
+  height: 20px;
+  color: #fefefe;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.twitter-follow {
+  background: #1b95e0;
+  opacity: 0.7;
+}
+
+.twitter-follow:hover {
+  opacity: initial;
+}
+
+.twitter-follow__icon {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+}
+
+.twitter-follow__icon {
+  background: url("../assets/icons/twitter-white.svg") transparent 0 0 no-repeat;
+  margin: 0px 2px;
+}
