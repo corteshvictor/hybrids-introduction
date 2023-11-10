@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "hybrids": "5.2.2",
-    "axios": "0.21.1"
+    "axios": "1.6.0"
   },
   "devDependencies": {
     "css-loader": "5.2.1",
